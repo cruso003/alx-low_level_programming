@@ -1,20 +1,25 @@
 #include "main.h"
 
 /**
- * puts2 -  a function that prints every other character of a string,
- * starting with the first character.
- * @str:- pointer to a string
- *
- * Return: nothing
+ * puts2 - printdfsdfsdfsdf
+ * followed by a new linedfs
+ * @str: string to prisfsf
  */
 void puts2(char *str)
 {
-	int i = 0;
+	int len, i;
 
-	while (str[i] != '\0')
+	len = 0;
+
+	while (str[len] != '\0')
+	{
+		len++;
+	}
+
+	for (i = 0; i < len; i += 2)
 	{
 		_putchar(str[i]);
-		i += 2;
 	}
+
 	_putchar('\n');
 }
