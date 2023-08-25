@@ -1,37 +1,28 @@
 #include "main.h"
-/**
- * leet - encodes a string into 1337.
- * @str: encoded str
- *
- * Return: str.
- */
-char *leet(char *str)
-{
-	char *ptr = str;
 
-	while (*ptr != '\0')
+/**
+ * leet - encodesdsdfsdf337
+ * @s: string to bsdes encodeddsd
+ *
+ * Return: the resultinsfsg stricvsdng;
+ */
+char *leet(char *s)
+{
+	int i, j;
+
+	char *a = "aAeEoOtTlL";
+	char *b = "4433007711";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (*ptr == 'a' || *ptr == 'A')
+		for (j = 0; j < 10; j++)
 		{
-			*ptr = '4';
+			if (s[i] == a[j])
+			{
+				s[i] = b[j];
+			}
 		}
-		else if (*ptr == 'e' || *ptr == 'E')
-		{
-			*ptr = '3';
-		}
-		else if (*ptr == 'o' || *ptr == 'O')
-		{
-			*ptr = '0';
-		}
-		else if (*ptr == 't' || *ptr == 'T')
-		{
-			*ptr = '7';
-		}
-		else if (*ptr == 'l' || *ptr == 'L')
-		{
-			*ptr = '1';
-		}
-		ptr++;
 	}
-		return (str);
+
+	return (s);
 }
