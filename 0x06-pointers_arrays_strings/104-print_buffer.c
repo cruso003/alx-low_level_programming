@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdio.h>
-/**f
+/**
  * print_line - printssfsdfs a ssdffdss bysdfsdtes
  * @c: buffer tosdfsdfsdfprint
  * @s: bytes of buffer to print
