@@ -12,7 +12,7 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	char *tetama = malloc(sizeof(char) * size);
 
-	if (tetama == NULL)
+	if (tetama == NULL || size == 0)
 	{
 		return (NULL);
 	}
