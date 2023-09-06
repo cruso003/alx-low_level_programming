@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * free_grid - frees 2D dimensional grid
  * @grid: 2D array
@@ -11,7 +12,7 @@ void free_grid(int **grid, int height)
 
 	if (grid == NULL)
 	{
-		return (NULL);
+		return;
 	}
 	for (i = 0; i < height; i++)
 	{
