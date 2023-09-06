@@ -53,10 +53,10 @@ char **strtow(char *str)
 		}
 	}
 	if (word_count == 0)
- 56         {
- 57                 free(word_array);
- 58                 return (NULL);
- 59         }
+	{
+		free(word_array);
+		return (NULL);
+	}
 	word_array[word_count] = NULL;
 	return (word_array);
 }
