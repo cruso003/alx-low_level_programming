@@ -43,7 +43,7 @@ int **alloc_grid(int width, int height)
 /**
  * free_grid - free the array grid
  * @grid: array
- * @width: width of array
+ * @height: height of array
  * Return: Nothing
  */
 void free_grid(int **grid, int height)
