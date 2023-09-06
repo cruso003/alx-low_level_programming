@@ -43,7 +43,7 @@ char **strtow(char *str)
 			word_array[word_count] = (char *)malloc((word_length + 1) * sizeof(char));
 			if (word_array[word_count] == NULL)
 			{
-				for (int j = 0; j < word_count; j++)
+				for (j = 0; j < word_count; j++)
 				{
 					free(word_array[j]);
 				}
