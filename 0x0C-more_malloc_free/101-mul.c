@@ -43,7 +43,12 @@ int _strlen(char *s)
  *   */
 void errors(void)
 {
-		printf("Error\n");
+		_putchar('E');
+		        _putchar('r');
+			        _putchar('r');
+				        _putchar('o');
+					        _putchar('r');
+						        _putchar('\n');
 			exit(98);
 }
 
