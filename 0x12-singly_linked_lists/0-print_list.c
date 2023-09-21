@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <string.h>
-#include <stdlib.h>
 #include <stdio.h>
 /**
  * print_list - prints all the elements of a list
@@ -20,7 +18,7 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%u] %s", h->len, h->str);
+			printf("[%u]%s", h->len, h->str);
 		}
 		h = h->next;
 		node_count++;
