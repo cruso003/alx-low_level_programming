@@ -1,9 +1,9 @@
-#include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include "lists.h"
+
 /**
- * free_list - A function that frees a list_t list
- * @head: list head
+ * free_list - frees linked list
+ * @head: list to be freed
  */
 void free_list(list_t *head)
 {
