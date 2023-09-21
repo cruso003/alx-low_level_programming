@@ -10,20 +10,19 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *current = h;
 	size_t node_count = 0;
 
-	while (current != NULL)
+	while (h)
 	{
-		if (current->str == NULL)
+		if (!h->str)
 		{
 			printf("[0](nil)\n");
 		}
 		else
 		{
-			printf("[%u] %s", current->len, current->str);
+			printf("[%u] %s", h->len, h->str);
 		}
-		current = current->next;
+		h = h->next;
 		node_count++;
 	}
 	return (node_count);
