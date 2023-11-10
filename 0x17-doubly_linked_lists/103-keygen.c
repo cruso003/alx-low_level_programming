@@ -1,4 +1,4 @@
-nclude <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 
@@ -32,12 +32,12 @@ int f4(char *usrn, int len)
 }
 
 /**
- *  * f5 - multiplies each char of username
- *   *
- *    * @usrn: username
- *     * @len: length of username
- *      * Return: multiplied char
- *       */
+ * f5 - multiplies each char of username
+ *
+ * @usrn: username
+ * @len: length of username
+ * Return: multiplied char
+ */
 int f5(char *usrn, int len)
 {
 	int ch;
@@ -55,11 +55,11 @@ int f5(char *usrn, int len)
 }
 
 /**
- *  * f6 - generates a random char
- *   *
- *    * @usrn: username
- *     * Return: a random char
- *      */
+ * f6 - generates a random char
+ *
+ * @usrn: username
+ * Return: a random char
+ */
 int f6(char *usrn)
 {
 	int ch;
@@ -77,12 +77,12 @@ int f6(char *usrn)
 }
 
 /**
- *  * main - Entry point
- *   *
- *    * @argc: arguments count
- *     * @argv: arguments vector
- *      * Return: Always 0
- *       */
+ * main - Entry point
+ *
+ * @argc: arguments count
+ * @argv: arguments vector
+ * Return: Always 0
+ */
 int main(int argc, char **argv)
 {
 	char keygen[7];
@@ -124,4 +124,4 @@ int main(int argc, char **argv)
 	for (ch = 0; keygen[ch]; ch++)
 		printf("%c", keygen[ch]);
 	return (0);
-
+}
